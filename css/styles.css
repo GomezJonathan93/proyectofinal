@@ -1,0 +1,975 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #ffff;
+}
+body{
+    background-color: #000;
+}
+/*trabajo index.html con 480x573*/
+/* trabajo header*/
+.flexDiv{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+header img{
+    height: 80px;
+    width: 80px;
+}
+.contenedorNav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contenedorNav li{
+    list-style: none;
+}
+.contenedorNav a{
+text-decoration: none;
+color: #ffffff;
+font-family: 'Lobster', cursive;
+font-size: 1.2rem;
+margin: 0.3rem;
+}
+/*trabajo el Titulo y subtitulos*/
+.indexH1{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.contenedorH2{
+    border: 0.12rem solid #8F00FF;
+    padding: 0.5rem;
+    margin: 0.6rem;
+}
+.contenedorH2 h2{
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.contenedorH2 .segundoH2{
+    color: #8F00FF;
+}
+/*Acá se trabaja las estadisticas*/
+section{
+    display: grid;
+    grid-template-areas: "clientes coaches"
+                        "boosters venta";
+}
+.clientes{
+    grid-area: clientes;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.coaches{
+    grid-area: coaches;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.boosters{
+    grid-area: boosters;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.venta{
+    grid-area: venta;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.parrafo2{
+    color: #8F00FF;
+    font-size: 3rem;
+}
+.imgEstadisticas{
+    height: 6.25rem;
+    width: 6.25rem;
+}
+/*parte de ventajas*/
+.ventajasSection{
+    display: inline-block;
+    background-color: #000;
+    padding-top: 2rem;
+    margin: 0.2rem;
+    border: 0.1rem solid #8F00FF;
+}
+.ventajasTitulo{
+    text-align: center;
+    font-size: 2.3rem;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+}
+.ventajasP{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    color: #ffffff;
+    padding: 10px 10px;
+}
+.ventajasSpan{
+    color: #8F00FF;
+    font-size: 1.2rem;
+}
+.ventajasContacto{
+    color: #8F00FF;
+    font-size: 1.2rem;
+    text-decoration: none;
+}
+/*trabajo referencias de la pagina
+
+los a incluyen rickrolls*/
+.referenciasTrabajo{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.referenciasTrabajo h3{
+    font-size: 1.6rem;
+    color: #8F00FF;
+    font-family:'Lobster', cursive;
+    padding-bottom: 1rem;
+}
+.referenciasTrabajo p{
+    padding-bottom: 2rem;
+    font-size: 1rem;
+    font-family:'Fredoka', sans-serif; ;
+}
+.referenciasTrabajo a{
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.2rem;
+}
+/* trabajo lore Yuumi*/
+.tituloLore{
+    text-align: center;
+    font-size: 2rem;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+}
+.divLore{
+    text-align: center;
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    color: #ffffff;
+    padding: 10px 10px;
+}
+.spanLore{
+    color: #8F00FF;
+    font-size: 1.2rem;
+}
+.video {
+    aspect-ratio: 16 / 9;
+    width: 100%;
+  }
+/*footer
+
+POR FIN XD*/
+.vuelveArriba{
+    display: flex;
+    justify-content: center;
+}
+.vuelveArriba a{
+    text-decoration: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1rem;
+    color: #8F00FF;
+}
+.redesSociales{
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+.redesSociales li{
+    list-style: none;
+}
+.redesSociales li a{
+    text-decoration: none;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 0.8rem;    
+}
+.parrafoFooter{
+    text-align: center;
+    font-size: 0.5rem;
+    font-family: 'Lobster', cursive;
+}
+.parrafoFooter a{
+    text-decoration: none;
+}
+.parrafoFooter2{
+    font-size: 0.8rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;    
+}
+/* media query*/
+@media only screen and (min-width:600px){
+    .imgEstadisticas{
+        height: 12rem;
+        width: 12rem;
+    }
+    .referenciasTrabajo h3{
+        font-size: 2.1rem;
+    }
+}
+@media only screen and (min-width:1024px){
+    header img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .contenedorNav a{
+        font-size: 1.5rem;
+        margin: 1rem;
+    }
+    .indexH1{
+        font-size: 5rem;
+    }
+    .contenedorH2 h2{
+        font-size: 1.5rem;
+    }
+    .estadisticas{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 1rem;
+    }
+    .clientes{
+        font-size: 2rem;
+    }
+    .coaches{
+        font-size: 2rem;
+    }
+    .boosters{
+        font-size: 2rem;
+    }
+    .venta{
+        font-size: 2rem;
+    }
+    .parrafo2{
+        font-size: 4rem;
+    }
+    .imgEstadisticas{
+        height: 15rem;
+        width: 15rem;
+    }
+    .ventajasSection{
+        margin: 1rem;
+    }
+    .ventajasTitulo{
+        font-size: 3.5rem;
+    }
+    .ventajasP{
+        font-size: 1.5rem;
+    }
+    .ventajasSpan{
+        font-size: 1.8rem;
+    }
+    .ventajasContacto{
+        font-size: 1.8rem;
+    }
+    .referenciasTrabajo h3{
+        font-size: 3.5rem;
+    }
+    .referenciasTrabajo p{
+        font-size: 1.5rem;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+    .referenciasTrabajo a{
+        font-size: 1.7rem;
+    }
+    .tituloLore{
+        font-size: 3.5rem;
+    }
+    .divLore{
+        font-size: 1.5rem;
+        padding: 10px 10px;
+    }
+    .spanLore{
+        font-size: 1.8rem;
+    }
+    .video{
+        margin-top: 2rem;
+        width: 560px;
+        height: 315px;
+    }
+    .vuelveArriba a{
+        font-size: 1rem;
+    }
+    .redesSociales li{
+        font-size: 1.5rem;
+    }
+    .redesSociales li a{
+        font-size: 1.5rem;
+    }
+    .parrafoFooter{
+        font-size: 0.8rem;
+    }
+    .parrafoFooter2{
+        font-size: 1.2rem;
+    }
+}
+/*empiezo coaching.html*/
+
+.h1Coaching h1{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
+.h2Coaching h2{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.divH3{
+    margin-top: 2rem;
+    background-color: #ededf2;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.divH3 h3{
+    color: #000000;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Fredoka', sans-serif;
+}
+.divH3 h4{
+    padding-top: 1rem;
+    color: #8F00FF;
+    text-align: center;
+    font-size: 1.8rem;
+    font-family: 'Fredoka', sans-serif;
+}
+.coachingP{
+    padding: 1rem;
+    color: #000000;
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: 'Fredoka', sans-serif;
+}
+/*parte de coaches*/
+.contenedorCoach{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    border: 0.2rem solid #8F00FF;
+}
+/*imagenes de coaches*/
+.buggaxCoach{
+    display: none;
+    height: 200px;
+    width: 250px;
+}
+.josedeodoCoach, .corejjCoach{
+    display: none;
+}
+.showmakerCoach{
+    display: none;
+    height: 200px;
+    width: 250px;
+}
+/*terminan las imagenes de coaches*/
+.botonContrato{
+    text-align: center;
+}
+.coachSpan{
+    color: #8F00FF;
+    font-size: 2rem;
+}
+.botonContrato a{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #8F00FF;
+}
+.buggaxP, .josedeodoP, .corejjP, .showmakerP{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+    flex-wrap: wrap;
+    padding-top: 1.6rem;
+    margin: 1.9rem;
+}
+/*reclutamiento y feedback*/
+.contenedorReclutamientoFeedback{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #000;
+    padding: 1rem;
+}
+.contenedorReclutamientoFeedback h5{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+}
+.reclutamientoP{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: #ffffff
+}
+.reclutamientoDiv .reclutamientoP span{
+    color: #8F00FF;
+    font-size: 1.5rem;
+}
+.reclutamientoP a{
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.5rem;
+}
+.feedbackCoaching{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 2rem;
+}
+.feedbackCoaching h5{
+    font-size: 3rem;
+    color: #8F00FF;
+    font-family:'Lobster', cursive;
+    padding-bottom: 1rem;
+}
+.feedbackCoaching p{
+    padding-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family:'Fredoka', sans-serif;
+}
+.feedbackCoaching a{
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.5rem;
+}
+/*media queries*/
+/*media query de 600px sin modificaciones*/
+@media only screen and (min-width:1024px){
+    header img{
+        height: 10rem;
+        width: 10rem;
+    }
+    .h1Coaching h1{
+        font-size: 5rem;
+    }
+    .h2Coaching h2{
+        font-size: 2.5rem;
+    }
+    .divH3 h3{
+        font-size:3rem ;
+    }
+    .divH3 h4{
+        font-size: 2.2rem;
+    }
+    .coachingP{
+        font-size: 1.8rem;
+    }
+    .contenedorCoach{
+        align-items: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+    .buggaxP, .josedeodoP, .corejjP, .showmakerP{
+        font-size: 2rem;
+    }
+    .contenedorReclutamientoFeedback{
+        display: grid;
+        grid-template-areas: 
+        "reclutamientoDiv feedbackCoaching feedbackCoaching"
+        "reclutamientoDiv feedbackCoaching feedbackCoaching"
+        "reclutamientoDiv feedbackCoaching feedbackCoaching"
+        "reclutamientoDiv feedbackCoaching feedbackCoaching";
+        align-items: center;
+    }
+    .reclutamientoDiv{
+        grid-area: reclutamientoDiv;
+    }
+    .feedbackCoaching{
+        grid-area: feedbackCoaching;
+    }
+}
+/*trabajo en boosting.html, siempre desde la menor resolucion primero*/
+.tituloBoosting{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
+.subtituloBoosting{
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.disclaimerBoosting{
+    margin: 1rem;
+    border: 0.2rem solid #8F00FF;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+}
+.disclaimerBoosting h3{
+    color: #8F00FF;
+    font-size: 1.2rem;
+}
+.disclaimerBoosting p{
+    font-size: 1.2rem;
+    margin: 5px;
+}
+.disclaimerBoosting a{
+    text-decoration: none;
+    color: #8F00FF;
+    font-size: 1.2rem;
+}
+.contenedorBooster{
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid #8F00FF;
+    margin: 1rem;
+    text-align: center;
+}
+.championBoost{
+    display: none;
+    height: 200px;
+    width: 250px;
+}
+.boosterP{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 25px;
+    margin: 30px;
+}
+.boosterP a{
+    font-family: 'Fredoka', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: #8F00FF;
+    padding-right: 5px;
+}
+/*mediaquery de 600px intacta*/
+@media only screen and (min-width:1024px){
+    .tituloBoosting{
+        font-size: 4rem;
+    }
+    .subtituloBoosting{
+        font-size: 2.18rem;
+    }
+    .disclaimerBoosting{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+    .disclaimerBoosting h3{
+        font-size: 1.87rem;
+    }
+    .disclaimerBoosting p{
+        font-size: 1.5rem;
+    }
+    .disclaimerBoosting a{
+        font-size: 1.8rem;
+    }
+    .contenedorBooster{
+        align-items: center;
+        margin-left: 10rem;
+        margin-right: 10rem;
+    }
+}
+/*trabajo cuentas.html
+Comienzo por la menor resolución*/
+.cuentasTitulo{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
+.cuentasSubtitulo{
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+.cuentasGaleria{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.tituloGaleria{
+    font-size: 2.5rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    color: #8F00FF
+}
+.imagenesGaleria{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: "img1 img2"
+                          "img3 img4"
+                          "img5 img6"
+                          "img7 img8"
+                          "img9 img9"
+                "parrafoGalGrid parrafoGalGrid"
+                 "contacGalGrid contacGalGrid";
+}
+.img1{
+    grid-area:img1 ;
+    height: 300px;
+    width: 200px;
+}
+.img2{
+    grid-area:img2 ;
+    height: 300px;
+    width: 200px;
+}
+.img3{
+    grid-area:img3 ;
+    height: 300px;
+    width: 200px;
+}
+.img4{
+    grid-area:img4 ;
+    height: 300px;
+    width: 200px;
+}
+.img5{
+    grid-area:img5 ;
+    height: 300px;
+    width: 200px;
+}
+.img6{
+    grid-area:img6 ;
+    height: 300px;
+    width: 200px;
+}
+.img7{
+    grid-area:img7 ;
+    height: 300px;
+    width: 200px;
+}
+.img8{
+    grid-area:img8 ;
+    height: 300px;
+    width: 200px;
+}
+.img9{
+    grid-area:img9 ;
+    height: 300px;
+    width: 200px;
+}
+.parrafoGalGrid{
+    grid-area: parrafoGalGrid;
+    font-size: 1.2rem;
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+
+}
+.contacGalGrid{
+    grid-area: contacGalGrid;
+    text-decoration: none;
+    color: #8F00FF;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.imagenesGaleria img{
+    padding-top: 0.5rem;
+}
+.imagenesGaleriaUn{
+    display: grid;
+    grid-template-areas: "imgUn1 imgUn2"
+                        "imgUn3 imgUn3";
+    justify-items: center;
+}
+.imgUn1{
+    grid-area: imgUn1;
+}
+.imgUn2{
+    grid-area: imgUn2;
+}
+.imgUn3{
+    grid-area: imgUn3;
+}
+.imagenesGaleriaUn img{
+    height: 300px;
+    width: 200px;
+    padding-top: 0.5rem;
+}
+.parrafoGaleria{
+    font-family: 'Fredoka', sans-serif;
+    text-align: center;
+    padding: 1rem;
+}
+.parrafoGaleria p{
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+.parrafoGaleria a{
+    text-decoration: none;
+    color: #8F00FF;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.metodosPago{
+    border: 0.2rem solid #8F00FF;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.metodosPago h3{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+}
+.metodoPago{
+    text-align: left;
+    color: #8F00FF;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2rem;
+}
+.parrafoPago{
+    font-size: 1.2rem;
+    font-family: 'Fredoka', sans-serif;
+    color: #ffffff;
+}
+.parrafoPago a{
+    text-decoration: none;
+    color: #8F00FF;
+}
+/*media query
+por ahora, la de 600px permanece sin modificaciones*/
+@media only screen and (min-width:1024px){
+    .cuentasTitulo{
+        font-size: 4rem;
+    }
+    .cuentasSubtitulo{
+        font-size: 2rem;
+    }
+    .tituloGaleria{
+        font-size: 3rem;
+    }
+    .imagenesGaleria{
+        display: grid;
+        justify-items:center;
+        grid-template-areas: "img1 img2 img3"
+                              "img4 img5 img6"
+                              "img7 img8 img9"
+"parrafoGalGrid parrafoGalGrid parrafoGalGrid"
+    "contacGalGrid contacGalGrid contacGalGrid";
+    }
+    .imagenesGaleria img{
+        height: 450px;
+        width: 300px;
+    }
+    .parrafoGalGrid{
+        font-size: 1.5rem;
+    }
+    .contacGalGrid{
+        font-size: 2rem;
+    }
+    .imagenesGaleriaUn{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .parrafoGaleria p{
+        font-size: 1.5rem;
+    }
+    .parrafoGaleria a{
+        font-size: 2rem;
+    }
+    .metodosPago{
+        border: 0.2rem solid #8F00FF;
+        margin: 1rem;
+    }
+    .metodosPago h3{
+        text-align: center;
+        color: #8F00FF;
+        font-family: 'Lobster', cursive;
+        font-size: 3rem;
+    }
+    .metodoPago{
+        text-align: left;
+        color: #8F00FF;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 2.5rem;
+    }
+    .parrafoPago{
+        font-size: 1.8rem;
+        font-family: 'Fredoka', sans-serif;
+        color: #ffffff;
+    }
+    .parrafoPago a{
+        text-decoration: none;
+        color: #8F00FF;
+    }
+}
+/*trabajo contacto.html con misma manera*/
+h1{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+.contenedorFormularioSocials{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.formularioContacto{
+    flex: 70%;
+}
+.formularioContacto legend{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Lobster', cursive;
+    font-size: 2rem;
+}
+.formularioContacto label{
+    font-size: 1.2rem;
+    font-family: 'Fredoka', sans-serif;
+}
+.formularioContacto input{
+    font-size: 1rem;
+    font-family: 'Fredoka', sans-serif;
+    color: #8F00FF;
+}
+.formularioContacto option{
+    color: #8F00FF
+}
+.formularioContacto select{
+    color: #8F00FF;
+}
+.socials{
+    flex: 30%;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.socials a{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.twitter{
+    padding-top: 50px;
+}
+.faqGeneral{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.tituloFaq{
+    text-align: center;
+    color: #8F00FF;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.parrafoFaq{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.tituloParrafoFaq{
+    color: #8F00FF;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 40px;
+}
+.parrafoFaq p{
+    color: #ffffff;
+    font-family: 'Fredoka', sans-serif;
+    font-size: 20px;
+    margin-bottom: 60px;
+}
+.logosDisclaimer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.logosContacto{
+    flex: 50%;
+}
+.disclaimerContacto{
+    flex: 50%;
+}
+/*media queries. 600px por ahora sin cambios*/
+@media only screen and (min-width:1024px){
+    h1{
+        font-size: 4rem;
+        margin-bottom: 3rem;
+    }
+    .formularioContacto legend{
+        font-size: 50px;
+    }
+    .formularioContacto label{
+        font-size: 30px;
+    }
+    .formularioContacto input{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+    .socials a{
+        font-size: 30px;
+    }
+    .faqGeneral{
+        background-color: #ededf2;
+        margin-top: 60px;
+    }
+    .tituloFaq{
+        text-align: center;
+        color: #000000;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 60px;
+        margin-bottom: 50px;
+    }
+    .parrafoFaq{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .tituloParrafoFaq{
+        color: #000000;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 40px;
+    }
+    .parrafoFaq p{
+        color: #000000;
+        font-family: 'Fredoka', sans-serif;
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+    .logosDisclaimer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 50px;
+    }
+    .logosContacto{
+        flex: 50%;
+    }
+    .disclaimerContacto{
+        flex: 50%;
+    }
+}

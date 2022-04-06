@@ -39,7 +39,20 @@ margin: 0.3rem;
     color: #8F00FF;
     font-family: 'Lobster', cursive;
     font-size: 3rem;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
 }
+@keyframes girar{
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/*borrar desde animation-name hasta aca*/
 .contenedorH2{
     border: 0.12rem solid #8F00FF;
     padding: 0.5rem;

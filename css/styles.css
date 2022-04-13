@@ -26,6 +26,9 @@ header img{
 .contenedorNav li{
     list-style: none;
 }
+.contenedorNav li a:hover{
+    color: #8F00FF;
+}
 .contenedorNav a{
 text-decoration: none;
 color: #ffffff;
@@ -39,20 +42,10 @@ margin: 0.3rem;
     color: #8F00FF;
     font-family: 'Lobster', cursive;
     font-size: 3rem;
-    animation-name: girar;
+    animation-name: pulse;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 2s;
 }
-@keyframes girar{
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
-
-/*borrar desde animation-name hasta aca*/
 .contenedorH2{
     border: 0.12rem solid #8F00FF;
     padding: 0.5rem;
@@ -134,29 +127,23 @@ section{
     font-size: 1.2rem;
     text-decoration: none;
 }
-/*trabajo referencias de la pagina
-
-los a incluyen rickrolls*/
-.referenciasTrabajo{
-    display: flex;
-    flex-direction: column;
+/*trabajo referencias de la pagina con Bootstrap*/
+.titulo-carrusel{
     text-align: center;
-    padding-top: 2rem;
-    margin-left: 1rem;
-    margin-right: 1rem;
-}
-.referenciasTrabajo h3{
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     color: #8F00FF;
     font-family:'Lobster', cursive;
     padding-bottom: 1rem;
 }
-.referenciasTrabajo p{
-    padding-bottom: 2rem;
-    font-size: 1rem;
-    font-family:'Fredoka', sans-serif; ;
+.texto-carousel{
+    margin: 3rem;
 }
-.referenciasTrabajo a{
+.carousel-item p{
+    font-size: 1.5rem;
+    font-family:'Fredoka', sans-serif;
+    text-align: center;
+}
+.carousel-item a{
     text-decoration: none;
     color: #8F00FF;
     font-size: 1.2rem;
@@ -183,9 +170,7 @@ los a incluyen rickrolls*/
     aspect-ratio: 16 / 9;
     width: 100%;
   }
-/*footer
-
-POR FIN XD*/
+/*footer*/
 .vuelveArriba{
     display: flex;
     justify-content: center;
@@ -207,7 +192,8 @@ POR FIN XD*/
 .redesSociales li a{
     text-decoration: none;
     font-family: 'Fredoka', sans-serif;
-    font-size: 0.8rem;    
+    font-size: 0.8rem;
+    color: #8F00FF;    
 }
 .parrafoFooter{
     text-align: center;
@@ -286,17 +272,28 @@ POR FIN XD*/
     .ventajasContacto{
         font-size: 1.8rem;
     }
-    .referenciasTrabajo h3{
+    /*query de carrusel*/
+    .titulo-carrusel{
+        text-align: center;
         font-size: 3.5rem;
+        color: #8F00FF;
+        font-family:'Lobster', cursive;
+        padding-bottom: 1rem;
     }
-    .referenciasTrabajo p{
+    .texto-carousel{
+        margin: 10rem;
+    }
+    .carousel-item p{
         font-size: 1.5rem;
-        margin-left: 20rem;
-        margin-right: 20rem;
+        font-family:'Fredoka', sans-serif;
+        text-align: center;
     }
-    .referenciasTrabajo a{
-        font-size: 1.7rem;
+    .carousel-item a{
+        text-decoration: none;
+        color: #8F00FF;
+        font-size: 1.2rem;
     }
+    /*query lore*/
     .tituloLore{
         font-size: 3.5rem;
     }

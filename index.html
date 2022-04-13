@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
     <!--iconos-->
     <script src="https://kit.fontawesome.com/32cea0e46f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--animaciones pag-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <!--letras-->
@@ -18,12 +19,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka&family=Lobster&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <!--logo pestaña-->
     <link rel="icon" href="images/Dreams Do Come True icon.png">
+    <!--css comun-->
+    <link rel="stylesheet" href="css/styles.css">
     <title>Fishy Fishy Dish Eloboost</title>
 </head>
 <body>
     <header id="irHeader">
         <div class="flexDiv">
-            <img src="images/portada.png" alt="">
+            <a href="index.html"><img src="images/portada.png" alt=""></a>
             <nav>
                 <ul class="contenedorNav">
                     <li>
@@ -88,24 +91,42 @@
                 Nos preocupa tu cuenta, por eso nuestros boosters desempeñan su tarea bajo una estricta norma de <span class="ventajasSpan">0% toxicidad</span> in game, resguardando así la integridad de tu cuenta
             </p>
         </section>
-        <section class="referenciasTrabajo">
-            <h3>Somos líderes en satisfacer a nuestros clientes</h3>
-            <p class="parrafoReferencias">
-                <i>"Un sitio de referencia para boosters y gente interesada en boostear su cuenta"</i>
-                 - 
-                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@boostingExp</a>
-            </p>
-            <p class="parrafoReferencias">
-                <i>"Coaches con verdadero background competitivo y una fuerte orientación al cliente por parte del management"</i>
-                - 
-                <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@coachesLOL</a>
-            </p>
-            <p class="parrafoReferencias">
-                <i>"Gracias a Fishy Fishy Dish, pasé de ser Plata 4 0LP a cumplir mi sueño de ser Bronce 1 75LP. Free kill"</i>
-                -
-                <a href="https://youtu.be/A7X6xJSVK2Q" target="_blank">@Barbakahn </a>
-            </p>
-        </section>
+        <h4 class="titulo-carrusel">Somos líderes en satisfacer a nuestros clientes</h4>
+        <section>
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p class="texto-carousel">
+                    <i>"Un sitio de referencia para boosters y gente interesada en boostear su cuenta"</i>
+                     - 
+                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@boostingExp</a>
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p class="texto-carousel">
+                    <i>"Coaches con verdadero background competitivo y una fuerte orientación al cliente por parte del management"</i>
+                    - 
+                    <a href="https://youtu.be/dQw4w9WgXcQ" target="_blank">@coachesLOL</a>
+                </p>
+                </div>
+                <div class="carousel-item">
+                  <p class="texto-carousel">
+                    <i>"Gracias a Fishy Fishy Dish, pasé de ser Plata 4 0LP a cumplir mi sueño de ser Bronce 1 75LP. Free kill"</i>
+                    -
+                    <a href="https://youtu.be/A7X6xJSVK2Q" target="_blank">@Barbakahn </a>
+                </p>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </section>
         <section>
             <div class="divLore">
                 <h4 class="tituloLore">El camino de Yuumi, la gata mágica</h4>
@@ -146,5 +167,10 @@
                 <a href="https://www.instagram.com/jonathan_uriel_gmz/" target="_blank">Jonathan Gómez</a></p>
             <p class="parrafoFooter2">Todos los derechos reservados</p>
     </footer>
+<script 
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+crossorigin="anonymous">
+</script>
 </body>
 </html>
